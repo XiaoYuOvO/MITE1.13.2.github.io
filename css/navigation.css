@@ -1,0 +1,62 @@
+*{
+	padding: 0%;/*内边距为0*/
+	margin: 0%;/*外边距为0*/
+	box-sizing: border-box;/*div始终为最初大小,不被边框,内,外边距影响*/
+	text-decoration:none;/*CSS文字修饰为无；这里用来清除超链接的默认下划线*/
+	list-style:none;/*设置列表项目样式为不使用项目符号*/
+}
+#Navigation{/*导航*/
+	width: 100%;
+	height: 75px;
+	background-color: white;
+	/*border: 1px solid red;*/
+	margin:0 auto;
+	/*background-image: url(img/b0214ac8adcb07b7aa0f627c1b8537ea.jpg);
+	background-repeat: no-repeat;*/
+}
+#Navigation-word{/*导航的ul*/
+	width: 100%;
+	height: 75px;
+	line-height: 75px;
+	/*border: 1px solid blueviolet;*/
+	/*margin-left: 5%;*//*距离左外边距*/
+	
+}
+#Navigation-word li{/*导航的文字*/
+	/*width: 20%;*/
+	font-size: 30px;
+	float: left;/*左浮动*/
+	/*color: #777777;*/
+	letter-spacing: 3px;/*文字间距*/
+	
+}
+li:nth-child(-n+3){/*选择前三个导航文字*/
+	text-indent: 30px;
+}
+li:nth-child(4){/*选择第四个导航文字*/
+	text-indent: 50px;			
+}
+li:nth-child(n+4){/*选择后两个导航文字*/
+				
+}
+#Navigation-chart{/*导航的图片的盒子*/
+	float: left;/*左浮动*/
+	margin-left: 10px;/*距离左外边距*/
+	
+}
+#logo{/*导航的图片*/
+	width: 75px;
+	height: 75px;						
+}			
+#home:link,#home:visited{/*导航文字主页点击前和点击后的颜色*/
+	color: #777777;
+}
+#home:hover,#home:active{/*把鼠标放到导航文字主页和点击时的颜色*/
+	color: blue;
+}
+.word:link,.word:visited{/*导航文字点击前和点击后的颜色*/
+	color: #777777;
+}
+.word:hover,.word:active{/*把鼠标放到导航文字和点击时的颜色*/
+	color: chartreuse;
+}

@@ -1,0 +1,137 @@
+*{
+	padding: 0%;/*内边距为0*/
+	margin: 0%;/*外边距为0*/
+	box-sizing: border-box;/*div始终为最初大小,不被边框,内,外边距影响*/
+	text-decoration:none;/*CSS文字修饰为无；这里用来清除超链接的默认下划线*/
+	list-style:none;/*设置列表项目样式为不使用项目符号*/
+}
+#Navigation{/*导航*/
+	width: 100%;
+	height: 75px;
+	background-color: white;
+	/*border: 1px solid red;*/
+	margin:0 auto;
+	/*background-image: url(img/b0214ac8adcb07b7aa0f627c1b8537ea.jpg);
+	background-repeat: no-repeat;*/
+}
+#Navigation-word{/*导航的ul*/
+	width: 100%;
+	height: 75px;
+	line-height: 75px;
+	/*border: 1px solid blueviolet;*/
+	/*margin-left: 5%;*//*距离左外边距*/
+	
+}
+#Navigation-word li{/*导航的文字*/
+	/*width: 20%;*/
+	font-size: 30px;
+	float: left;/*左浮动*/
+	/*color: #777777;*/
+	letter-spacing: 3px;/*文字间距*/
+	
+}
+li:nth-child(-n+3){/*选择前三个导航文字*/
+	text-indent: 30px;
+}
+li:nth-child(4){/*选择第四个导航文字*/
+	text-indent: 50px;			
+}
+li:nth-child(n+4){/*选择后两个导航文字*/
+				
+}
+#Navigation-chart{/*导航的图片的盒子*/
+	float: left;/*左浮动*/
+	margin-left: 10px;/*距离左外边距*/		
+}
+#logo{/*导航的图片*/
+	width: 75px;
+	height: 75px;						
+}			
+#home:link,#home:visited{/*导航文字主页点击前和点击后的颜色*/
+	color: #777777;
+}
+#home:hover,#home:active{/*把鼠标放到导航文字主页和点击时的颜色*/
+	color: blue;
+}
+.word:link,.word:visited{/*导航文字点击前和点击后的颜色*/
+	color: #777777;
+}
+.word:hover,.word:active{/*把鼠标放到导航文字和点击时的颜色*/
+	color: chartreuse;
+}
+#Carousel{/*轮播图*/
+	/*width: 100%;*/
+	width: 1366px;
+	height: 750px;				
+	position: relative;/*参照物*/
+	margin: 0 auto;/*居中*/
+}
+#Carousel ul li{
+	width: 100%;
+	height: 750px;
+	position: absolute;/*运动的元素，相对于轮播图的div进行运动，默认为0*/
+}
+#Carousel ul li img{
+	width: 1366px;
+	height: 750px;
+	display: block;/*转换为块样式*/
+	/*margin: 0 auto;/*居中*/
+}
+#Propaganda{/*宣传图*/
+	display: block;/*转换为块样式*/
+	margin: 0 auto;/*居中*/				
+}
+.Carousel_button{/*轮播图按钮*/
+	text-align: center;/*把文本排列到中间*/
+	position: absolute;/*这里是让按钮与图片同一层次*/
+	width: 100%;
+	bottom: 15px;/*距离底部*/
+}
+.Carousel_button span{/*轮播图按钮*/
+	width: 17px;
+	height: 17px;
+	background: rgba(105,105,105,0.5);/*色值一，色值二，色值三，透明度*/
+	display: inline-block;/*让这类标签表现得如块级元素一样，可以设置宽高,不换行*/
+	border-radius: 50%;/*变成圆角*/
+	cursor: pointer;/*让鼠标位于上方时变成可点击样式(变成小手)*/
+	margin-right: 14px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(255,255,255,0.3);
+}
+.point.active{/*轮播图按钮*/
+	background-color: rgba(255,255,255,0.3);
+}
+.btn{/*轮播图左右按钮*/
+	width: 50px;
+	height: 100px;
+	position: absolute;/*运动的元素，相对于轮播图的div进行运动，默认为0*/
+	top: 275px;  /*轮播图整体高度750*/
+	z-index: 100;/*按钮的层次,避免被图片盖住*/
+	background-color: rgba(10,10,10,0.5);/*按钮背景*/
+	border-color: rgba(10,10,10,0.0);/*按钮边框*/
+	color: rgba(255,255,255,0.5);/*按钮中的字体*/
+	cursor: pointer;
+	outline:none;
+}
+#goPre{
+	left: 0px;/*距离左边0px*/
+}
+#goNext{
+	right: 0px;/*距离右边0px*/
+}
+.item.active{/*同时拥有这两个类名则将Z轴改为10*/
+	z-index: 10;
+	opacity: 1;/*不透明级别*/
+}
+.item{
+	opacity: 0;/*不透明级别*/
+	transition: all .5s;/*渐变*/
+}
+.Carousel_button{/*按钮盒子*/
+	z-index: 1000;/*按钮的层次,避免被图片盖住*/
+}
+
+
+
+

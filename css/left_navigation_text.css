@@ -1,0 +1,14 @@
+
+.left_navigation_text:link,.left_navigation_text:visited{/*关于文字点击前和点击后的颜色*/
+	color: black;
+}
+.left_navigation_text:hover,.left_navigation_text:active{/*把鼠标放到关于文字和点击时的颜色*/
+	color: chartreuse;
+}
+#we{/*第一个关于文字的盒子*/
+	margin-top: 0px;/*距离上外边距*/
+}
+.about_div{/*关于文字的盒子*/
+	margin-left: 10px;/*距离左外边距*/
+	margin-top: 10px;/*距离上外边距*/
+}
