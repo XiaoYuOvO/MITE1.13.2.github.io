@@ -4,6 +4,7 @@ var goPreBtn = document.getElementById('goPre');//获取左按钮
 var goNextBtn = document.getElementById('goNext');//获取右按钮
 var points = document.getElementsByClassName('point');//轮播图按钮
 var index =0;//index表示第几张图片在展示,第index张图片有active这个类名字(拥有这个类名将会把图层变高)
+var timerHandler;
 
 var clearActive = function(){
 	for(var i = 0;i < items.length;i++){//把所有的li还原
@@ -28,6 +29,10 @@ var goNext = function(){//让图片去到下一张
 	}
 	
 	goIndex();
+	clearInterval(timerHandler)
+	timerHandler = setInterval(function(){
+		goNext();
+	},4000);
 }
 
 var goPre = function(){//让图片去到上一张
